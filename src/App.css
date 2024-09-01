@@ -23,13 +23,13 @@ a {
   color: black;
 }
 
-.Cards{
+.cards{
   display: flex;
   margin: 20px;
   width: 1200px;
 }
 
-.Cards > ul {
+.cards > ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -37,34 +37,34 @@ a {
   gap: 30px;
 }
 
-.Card {
+.card {
   display: flex;
-  flex-direction: column;
   width: 300px;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 500px;
 }
 
-.Card > img {
+.card > img {
   border: 1px solid black;
 }
 
-.Card > h2 {
-  margin-top: 10px;
+.card > h2 {
   font-weight: 700;
   line-height: 1.7;
   border-bottom: 1px solid gray;
 }
 
-.Card > h3 {
-  margin-top: 10px;
+.card > h3 {
   font-weight: 700;
 }
 
-.Card > p {
+.card > p {
   margin-top: 7px;
   line-height: 1.2;
 }
 
-.CartButton {
+.cartButton {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -72,12 +72,12 @@ a {
   font-size: 12px;
 }
 
-.CartButton > p {
+.cartButton > span {
   background-color: rgb(204, 196, 196);
   font-size: 20px;
 }
 
-.CartButton button {
+.cartButton button {
   padding: 6px;
   width: max-content;
   border: none;
@@ -86,17 +86,17 @@ a {
 }
 
 @media (max-width: 1000px) {
-  .Cards {
+  .cards {
     width: 800px;
   }
 
-  .Cards > ul {
+  .cards > ul {
     gap: 60px;
   };
 }
 
 @media (max-width: 700px) {
-    .Cards {
-      width: 400px;
-    };  
+  .cards {
+    width: 400px;
+  };  
 }
